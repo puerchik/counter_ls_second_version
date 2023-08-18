@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  text-align: center;
+  padding-top: 145px;
+}
+
+.border {
+  border: 3px solid #61dafb;
+  border-radius: 10px;
+}
+
+.main-wrapper {
+  width: 590px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.display-wrapper {
+  height: 153px;
+  margin-bottom: 15px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-bar-wrapper {
+  height: 100px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrapper-text {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.input {
+  all: unset;
+  background-color: #fff;
+  width: 250px;
+  border: 3px solid #61dafb;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.button-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-value {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.display-wrapper-counter {
+  justify-content: center;
+}
+
+.button-bar-wrapper-counter {
+  padding: 0 35px;
+  justify-content: space-between;
+}
+
+.button {
+  all: unset;
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 0 25px;
+  border-radius: 10px;
+  font-size: 45px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #555c5c;
+  cursor: default;
+}
+
+.limit-value {
+  color: #ff0000;
+}
+
+.incorect-value-input {
+  border: 3px solid #ff0000;
+  background-color: rgb(223, 147, 147);
 }
